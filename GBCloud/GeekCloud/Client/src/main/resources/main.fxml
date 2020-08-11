@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.MainController">
+    <AnchorPane prefHeight="352.0" prefWidth="443.0" GridPane.rowIndex="1">
+        <Button fx:id="Download" layoutX="353.0" layoutY="320.0" mnemonicParsing="false" onAction="#pressOnDownloadBtn" prefWidth="75.0" text="Скачать">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+        <ListView fx:id="ClientList" layoutX="15.0" layoutY="40.0" prefHeight="270.0" prefWidth="200.0" />
+        <TextField fx:id="tfFileName" layoutX="15.0" layoutY="320.0" prefHeight="25.0" prefWidth="247.0">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+        <ListView fx:id="ServerList" layoutX="230.0" layoutY="40.0" prefHeight="270.0" prefWidth="200.0" />
+      <Button fx:id="Send" layoutX="273.0" layoutY="320.0" mnemonicParsing="false" onAction="#pressOnSendBtn" text="Отправить">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+              <TextArea editable="false" layoutX="15.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="80.0" text="ClientList" />
+        <TextArea editable="false" layoutX="230.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="80.0" text="ServerList" />
+      <Button fx:id="Update" layoutX="350.0" layoutY="10.0" mnemonicParsing="false" onAction="#pressOnUpdateBtn" prefHeight="25.0" prefWidth="80.0" text="Обновить">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <effect>
+         <SepiaTone level="0.25" />
+      </effect>
+
+    </AnchorPane>
+
+
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+</GridPane>
